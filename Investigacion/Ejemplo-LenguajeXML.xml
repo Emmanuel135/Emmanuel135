@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<peliculas>
+    <pelicula tipo = "comedia" clasificacion = "pg-13" ano = "2004">
+        <titulo>Raising Arizaona</titulo>
+        <guionista>Ethan Coen=</guionista>
+        <productor>Ethan Coen</productor>
+        <director>Joel Coen</director>
+        <actor>Nicolas Cage</actor>
+        <actor>Holly Hunter</actor>
+    </pelicula>
+
+    <pelicula tipo = "ciencia-ficcion" clasificacion = "pg-13" ano = "1989">
+        <titulo>The Abyss</titulo>
+        <guionista>James Cameron</guionista>
+        <productor>Gale Anne Hurd</productor>
+        <director>James Cameron</director>
+        <actor> Ed Harris</actor>
+        <actor> Mary Elizabeth</actor>
+    </pelicula>
+</peliculas>
