@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">]>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:exterms="http://www.example.com/terms/"
+            xml:base="http://www.example.com/2002/04/products">
+
+  <rdf:Description rdf:ID="item10245">
+     <exterms:weight rdf:datatype="&xsd;decimal">2.4</exterms:weight>
+  </rdf:Description>
+
+  <rdf:Statement rdf:about="#triple12345">
+     <rdf:subject rdf:resource="http://www.example.com/2002/04/products#item10245"/>
+     <rdf:predicate rdf:resource="http://www.example.com/terms/weight"/>
+     <rdf:object rdf:datatype="&xsd;decimal">2.4</rdf:object>
+
+     <dc:creator rdf:resource="http://www.example.com/staffid/85740"/>
+  </rdf:Statement>
+
+</rdf:RDF>
