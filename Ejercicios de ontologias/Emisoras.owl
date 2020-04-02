@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#"
+     xml:base="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#emite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#emite">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#es_emitida_en"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Emisora"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Serie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#es_de_genero -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#es_de_genero">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Genero"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#es_emitida_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#es_emitida_en">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Emisora"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#es_producida_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#es_producida_por">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#produce"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Estudio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#produce -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#produce">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Estudio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Serie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#trabaja_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#trabaja_en">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Gente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Serie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#clasificacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#clasificacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Serie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#fin_emision -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#fin_emision">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Serie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#inicio_emision -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#inicio_emision">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Serie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#nombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Emisora"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Estudio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Genero"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Gente"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Serie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#rango_edad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#rango_edad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Genero"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Serie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#ubicacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#ubicacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Estudio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Accion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Accion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Director"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Gente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Animacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Animacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Estudio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Arte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Arte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Director"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Gente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Emisora -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Emisora"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Escritor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Escritor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Gente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Estudio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Estudio"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Fotografo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Fotografo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Gente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Genero -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Genero"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Gente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Gente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Musica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Musica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Estudio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Musico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Musico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Gente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Produccion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Produccion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Estudio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Productor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Productor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Gente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Publicista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Publicista">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Gente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Serie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduardosilvestre/ontologies/2020/3/untitled-ontology-10#Serie"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

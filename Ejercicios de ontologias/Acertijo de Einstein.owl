@@ -1,0 +1,659 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mane/ontologies/2020/3/untitled-ontology-9"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mane/ontologies/2020/3/untitled-ontology-9">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bebida"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Casa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cigarrillos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Persona"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#numero"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#El_que_fuma_bebe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#El_que_fuma_cria"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#El_que_fuma_tiene"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#El_que_fuma_vive_al_lado_del_que_bebe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#El_que_tiene_vive_al_lado_del_que_fuma"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#El_que_vive_bebe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Es_la_casa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Esta_a_la_izquierda_de"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Fuma"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Su_dueño_bebe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Su_dueño_fuma"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Vive__al__lado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Vive_en"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bebe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#su_dueño_es"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tiene"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agua"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aleman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Blend"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bluemaster"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Britanico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Caballo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cafe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Casa_Amarilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Casa_Azul"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Casa_Blanca"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Casa_Roja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Casa_Verde"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cerveza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Danes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dunhill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Leche"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Noruego"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Numero1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Numero2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Numero3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Numero4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Numero5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pajaro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pall_Mall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Perro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prince"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sueco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Te"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Persona"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Fuma"/>
+            <Class IRI="#Cigarrillos"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Persona"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Vive_en"/>
+            <Class IRI="#Casa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Persona"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Vive_en"/>
+            <Class IRI="#numero"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Persona"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#bebe"/>
+            <Class IRI="#Bebida"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Persona"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#tiene"/>
+            <Class IRI="#Animal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Animal"/>
+        <Class IRI="#Bebida"/>
+        <Class IRI="#Casa"/>
+        <Class IRI="#Cigarrillos"/>
+        <Class IRI="#Persona"/>
+        <Class IRI="#numero"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Bebida"/>
+        <NamedIndividual IRI="#Agua"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Persona"/>
+        <NamedIndividual IRI="#Aleman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cigarrillos"/>
+        <NamedIndividual IRI="#Blend"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cigarrillos"/>
+        <NamedIndividual IRI="#Bluemaster"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Persona"/>
+        <NamedIndividual IRI="#Britanico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Animal"/>
+        <NamedIndividual IRI="#Caballo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bebida"/>
+        <NamedIndividual IRI="#Cafe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Casa"/>
+        <NamedIndividual IRI="#Casa_Amarilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Casa"/>
+        <NamedIndividual IRI="#Casa_Azul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Casa"/>
+        <NamedIndividual IRI="#Casa_Blanca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Casa"/>
+        <NamedIndividual IRI="#Casa_Roja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Casa"/>
+        <NamedIndividual IRI="#Casa_Verde"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bebida"/>
+        <NamedIndividual IRI="#Cerveza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Persona"/>
+        <NamedIndividual IRI="#Danes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cigarrillos"/>
+        <NamedIndividual IRI="#Dunhill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Animal"/>
+        <NamedIndividual IRI="#Gato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bebida"/>
+        <NamedIndividual IRI="#Leche"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Persona"/>
+        <NamedIndividual IRI="#Noruego"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#numero"/>
+        <NamedIndividual IRI="#Numero1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#numero"/>
+        <NamedIndividual IRI="#Numero2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#numero"/>
+        <NamedIndividual IRI="#Numero3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#numero"/>
+        <NamedIndividual IRI="#Numero4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#numero"/>
+        <NamedIndividual IRI="#Numero5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Animal"/>
+        <NamedIndividual IRI="#Pajaro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cigarrillos"/>
+        <NamedIndividual IRI="#Pall_Mall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Animal"/>
+        <NamedIndividual IRI="#Perro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Animal"/>
+        <NamedIndividual IRI="#Pez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cigarrillos"/>
+        <NamedIndividual IRI="#Prince"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Persona"/>
+        <NamedIndividual IRI="#Sueco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bebida"/>
+        <NamedIndividual IRI="#Te"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Fuma"/>
+        <NamedIndividual IRI="#Aleman"/>
+        <NamedIndividual IRI="#Prince"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#El_que_fuma_tiene"/>
+        <NamedIndividual IRI="#Blend"/>
+        <NamedIndividual IRI="#Gato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#El_que_fuma_vive_al_lado_del_que_bebe"/>
+        <NamedIndividual IRI="#Blend"/>
+        <NamedIndividual IRI="#Agua"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#El_que_fuma_bebe"/>
+        <NamedIndividual IRI="#Bluemaster"/>
+        <NamedIndividual IRI="#Cerveza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Vive_en"/>
+        <NamedIndividual IRI="#Britanico"/>
+        <NamedIndividual IRI="#Casa_Roja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#El_que_tiene_vive_al_lado_del_que_fuma"/>
+        <NamedIndividual IRI="#Caballo"/>
+        <NamedIndividual IRI="#Dunhill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Su_dueño_fuma"/>
+        <NamedIndividual IRI="#Casa_Amarilla"/>
+        <NamedIndividual IRI="#Dunhill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Esta_a_la_izquierda_de"/>
+        <NamedIndividual IRI="#Casa_Verde"/>
+        <NamedIndividual IRI="#Casa_Blanca"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Su_dueño_bebe"/>
+        <NamedIndividual IRI="#Casa_Verde"/>
+        <NamedIndividual IRI="#Cafe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#bebe"/>
+        <NamedIndividual IRI="#Danes"/>
+        <NamedIndividual IRI="#Te"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Vive_en"/>
+        <NamedIndividual IRI="#Noruego"/>
+        <NamedIndividual IRI="#Numero1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#El_que_vive_bebe"/>
+        <NamedIndividual IRI="#Numero3"/>
+        <NamedIndividual IRI="#Leche"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#El_que_fuma_cria"/>
+        <NamedIndividual IRI="#Pall_Mall"/>
+        <NamedIndividual IRI="#Pajaro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tiene"/>
+        <NamedIndividual IRI="#Sueco"/>
+        <NamedIndividual IRI="#Perro"/>
+    </ObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#Fuma"/>
+        <NamedIndividual IRI="#Aleman"/>
+        <NamedIndividual IRI="#Blend"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#Fuma"/>
+        <NamedIndividual IRI="#Aleman"/>
+        <NamedIndividual IRI="#Bluemaster"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#Fuma"/>
+        <NamedIndividual IRI="#Aleman"/>
+        <NamedIndividual IRI="#Dunhill"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#Fuma"/>
+        <NamedIndividual IRI="#Aleman"/>
+        <NamedIndividual IRI="#Pall_Mall"/>
+    </NegativeObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#su_dueño_es"/>
+        <ObjectProperty IRI="#tiene"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#El_que_fuma_bebe"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#El_que_fuma_cria"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#El_que_fuma_tiene"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#El_que_fuma_vive_al_lado_del_que_bebe"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#El_que_vive_bebe"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Fuma"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Su_dueño_bebe"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Su_dueño_fuma"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Vive_en"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#bebe"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#su_dueño_es"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#tiene"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#El_que_fuma_bebe"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#El_que_fuma_cria"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#El_que_fuma_tiene"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#El_que_fuma_vive_al_lado_del_que_bebe"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#El_que_tiene_vive_al_lado_del_que_fuma"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#El_que_vive_bebe"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#Es_la_casa"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#Esta_a_la_izquierda_de"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#Fuma"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#Su_dueño_bebe"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#Su_dueño_fuma"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#Vive__al__lado"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#Vive_en"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#bebe"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#su_dueño_es"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#tiene"/>
+    </TransitiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#su_dueño_es"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#El_que_fuma_bebe"/>
+        <Class IRI="#Cigarrillos"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#El_que_fuma_cria"/>
+        <Class IRI="#Cigarrillos"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#El_que_fuma_tiene"/>
+        <Class IRI="#Cigarrillos"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#El_que_fuma_vive_al_lado_del_que_bebe"/>
+        <Class IRI="#Cigarrillos"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#El_que_tiene_vive_al_lado_del_que_fuma"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#El_que_vive_bebe"/>
+        <Class IRI="#Casa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#El_que_vive_bebe"/>
+        <Class IRI="#numero"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Es_la_casa"/>
+        <Class IRI="#Casa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Esta_a_la_izquierda_de"/>
+        <Class IRI="#Casa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Fuma"/>
+        <Class IRI="#Persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Su_dueño_bebe"/>
+        <Class IRI="#Casa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Su_dueño_fuma"/>
+        <Class IRI="#Casa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Vive__al__lado"/>
+        <Class IRI="#Persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Vive_en"/>
+        <Class IRI="#Persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#bebe"/>
+        <Class IRI="#Persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#su_dueño_es"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tiene"/>
+        <Class IRI="#Persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#El_que_fuma_bebe"/>
+        <Class IRI="#Bebida"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#El_que_fuma_cria"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#El_que_fuma_tiene"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#El_que_fuma_vive_al_lado_del_que_bebe"/>
+        <Class IRI="#Bebida"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#El_que_tiene_vive_al_lado_del_que_fuma"/>
+        <Class IRI="#Cigarrillos"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#El_que_vive_bebe"/>
+        <Class IRI="#Bebida"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Es_la_casa"/>
+        <Class IRI="#numero"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Esta_a_la_izquierda_de"/>
+        <Class IRI="#Casa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Fuma"/>
+        <Class IRI="#Cigarrillos"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Su_dueño_bebe"/>
+        <Class IRI="#Bebida"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Su_dueño_fuma"/>
+        <Class IRI="#Cigarrillos"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Vive__al__lado"/>
+        <Class IRI="#Casa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Vive__al__lado"/>
+        <Class IRI="#numero"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Vive_en"/>
+        <Class IRI="#Casa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Vive_en"/>
+        <Class IRI="#numero"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#bebe"/>
+        <Class IRI="#Bebida"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#su_dueño_es"/>
+        <Class IRI="#Persona"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tiene"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
