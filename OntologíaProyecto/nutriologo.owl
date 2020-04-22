@@ -1,0 +1,654 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mane/ontologies/2020/2/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mane/ontologies/2020/2/untitled-ontology-6">
+    <Prefix name="" IRI="http://www.semanticweb.org/mane/ontologies/2020/2/untitled-ontology-6"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Actividad_fisica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alimentos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#De_origen_animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fisico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Frutas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lacteos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TMB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#aceites_y_grasas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#azucares"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cereales_y_tuberculos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#consejos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dieta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ejer_intenso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ejer_leve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ejer_moderado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ejer_muy_intenso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ganar_peso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hombre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#leguminosas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#macros"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mantener_peso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mujer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#perder_peso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sedentario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#usuario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#verduras"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contiene"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contienen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estan_en"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#realiza"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiere"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#satisface"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#su_genero_es"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tiene"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Dieta"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Macros"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Nombre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#altura"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cantidad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#consejo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#edad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#genero"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idusuario"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#kcalorias"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#peso"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tipo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alimento1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alimento2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AlimentoN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carbohidratos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Consejo1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dieta1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grasas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Persona1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Proteinas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ejercicio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tmb"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#De_origen_animal"/>
+        <Class IRI="#Alimentos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Frutas"/>
+        <Class IRI="#Alimentos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lacteos"/>
+        <Class IRI="#Alimentos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#aceites_y_grasas"/>
+        <Class IRI="#Alimentos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#azucares"/>
+        <Class IRI="#Alimentos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cereales_y_tuberculos"/>
+        <Class IRI="#Alimentos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ejer_intenso"/>
+        <Class IRI="#Actividad_fisica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ejer_leve"/>
+        <Class IRI="#Actividad_fisica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ejer_moderado"/>
+        <Class IRI="#Actividad_fisica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ejer_muy_intenso"/>
+        <Class IRI="#Actividad_fisica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ganar_peso"/>
+        <Class IRI="#dieta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hombre"/>
+        <Class IRI="#usuario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#leguminosas"/>
+        <Class IRI="#Alimentos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mantener_peso"/>
+        <Class IRI="#dieta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mujer"/>
+        <Class IRI="#usuario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#perder_peso"/>
+        <Class IRI="#dieta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sedentario"/>
+        <Class IRI="#Actividad_fisica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#verduras"/>
+        <Class IRI="#Alimentos"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Lacteos"/>
+        <NamedIndividual IRI="#Alimento1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#De_origen_animal"/>
+        <NamedIndividual IRI="#Alimento2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#leguminosas"/>
+        <NamedIndividual IRI="#AlimentoN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#macros"/>
+        <NamedIndividual IRI="#Carbohidratos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#consejos"/>
+        <NamedIndividual IRI="#Consejo1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#perder_peso"/>
+        <NamedIndividual IRI="#Dieta1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#macros"/>
+        <NamedIndividual IRI="#Grasas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hombre"/>
+        <NamedIndividual IRI="#Persona1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#macros"/>
+        <NamedIndividual IRI="#Proteinas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ejer_leve"/>
+        <NamedIndividual IRI="#ejercicio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TMB"/>
+        <NamedIndividual IRI="#tmb"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contienen"/>
+        <NamedIndividual IRI="#Alimento1"/>
+        <NamedIndividual IRI="#Carbohidratos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contienen"/>
+        <NamedIndividual IRI="#Alimento1"/>
+        <NamedIndividual IRI="#Grasas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contienen"/>
+        <NamedIndividual IRI="#Alimento1"/>
+        <NamedIndividual IRI="#Proteinas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contienen"/>
+        <NamedIndividual IRI="#Alimento2"/>
+        <NamedIndividual IRI="#Grasas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contienen"/>
+        <NamedIndividual IRI="#Alimento2"/>
+        <NamedIndividual IRI="#Proteinas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contiene"/>
+        <NamedIndividual IRI="#Dieta1"/>
+        <NamedIndividual IRI="#Alimento1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contiene"/>
+        <NamedIndividual IRI="#Dieta1"/>
+        <NamedIndividual IRI="#Alimento2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contiene"/>
+        <NamedIndividual IRI="#Dieta1"/>
+        <NamedIndividual IRI="#AlimentoN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contiene"/>
+        <NamedIndividual IRI="#Dieta1"/>
+        <NamedIndividual IRI="#Consejo1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#satisface"/>
+        <NamedIndividual IRI="#Dieta1"/>
+        <NamedIndividual IRI="#tmb"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#realiza"/>
+        <NamedIndividual IRI="#Persona1"/>
+        <NamedIndividual IRI="#ejercicio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiere"/>
+        <NamedIndividual IRI="#Persona1"/>
+        <NamedIndividual IRI="#Dieta1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tiene"/>
+        <NamedIndividual IRI="#Persona1"/>
+        <NamedIndividual IRI="#tmb"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre"/>
+        <NamedIndividual IRI="#Alimento1"/>
+        <Literal>Leche o yogurt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cantidad"/>
+        <NamedIndividual IRI="#Alimento1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">250</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kcalorias"/>
+        <NamedIndividual IRI="#Alimento1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre"/>
+        <NamedIndividual IRI="#Alimento2"/>
+        <Literal>Huevo a la mexicana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cantidad"/>
+        <NamedIndividual IRI="#Alimento2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kcalorias"/>
+        <NamedIndividual IRI="#Alimento2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">165</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre"/>
+        <NamedIndividual IRI="#AlimentoN"/>
+        <Literal>Barra de granola</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cantidad"/>
+        <NamedIndividual IRI="#AlimentoN"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kcalorias"/>
+        <NamedIndividual IRI="#AlimentoN"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">70</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#consejo"/>
+        <NamedIndividual IRI="#Consejo1"/>
+        <Literal>Beber diario 2 litros de agua te ayudará a mantenerte bien hidratado y tener una mejor digestión.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idusuario"/>
+        <NamedIndividual IRI="#Dieta1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre"/>
+        <NamedIndividual IRI="#Persona1"/>
+        <Literal>Pedro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#altura"/>
+        <NamedIndividual IRI="#Persona1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">176</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#edad"/>
+        <NamedIndividual IRI="#Persona1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#genero"/>
+        <NamedIndividual IRI="#Persona1"/>
+        <Literal>hombre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idusuario"/>
+        <NamedIndividual IRI="#Persona1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peso"/>
+        <NamedIndividual IRI="#Persona1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">85.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kcalorias"/>
+        <NamedIndividual IRI="#tmb"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2354</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#contienen"/>
+        <ObjectProperty IRI="#estan_en"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contiene"/>
+        <Class IRI="#dieta"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contienen"/>
+        <Class IRI="#Alimentos"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estan_en"/>
+        <Class IRI="#macros"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#realiza"/>
+        <Class IRI="#usuario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requiere"/>
+        <Class IRI="#usuario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#satisface"/>
+        <Class IRI="#dieta"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#su_genero_es"/>
+        <Class IRI="#usuario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tiene"/>
+        <Class IRI="#usuario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contiene"/>
+        <Class IRI="#Alimentos"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contiene"/>
+        <Class IRI="#consejos"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contienen"/>
+        <Class IRI="#macros"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estan_en"/>
+        <Class IRI="#Alimentos"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#realiza"/>
+        <Class IRI="#Actividad_fisica"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiere"/>
+        <Class IRI="#dieta"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#satisface"/>
+        <Class IRI="#TMB"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#su_genero_es"/>
+        <Class IRI="#hombre"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#su_genero_es"/>
+        <Class IRI="#mujer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tiene"/>
+        <Class IRI="#Fisico"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tiene"/>
+        <Class IRI="#TMB"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Dieta"/>
+        <Class IRI="#dieta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Macros"/>
+        <Class IRI="#Alimentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre"/>
+        <Class IRI="#Alimentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre"/>
+        <Class IRI="#macros"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre"/>
+        <Class IRI="#usuario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#altura"/>
+        <Class IRI="#Fisico"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cantidad"/>
+        <Class IRI="#Alimentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cantidad"/>
+        <Class IRI="#macros"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#edad"/>
+        <Class IRI="#usuario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#genero"/>
+        <Class IRI="#usuario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#idusuario"/>
+        <Class IRI="#dieta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#idusuario"/>
+        <Class IRI="#usuario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#kcalorias"/>
+        <Class IRI="#Actividad_fisica"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#kcalorias"/>
+        <Class IRI="#Alimentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#kcalorias"/>
+        <Class IRI="#TMB"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#peso"/>
+        <Class IRI="#Fisico"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipo"/>
+        <Class IRI="#Alimentos"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Dieta"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Macros"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Nombre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#altura"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cantidad"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#edad"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#genero"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#idusuario"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#kcalorias"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#peso"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tipo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
